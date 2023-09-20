@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let mapexample = new Map();
+        mapexample.set("poornima","FrontendEngineer");
+        mapexample.set("praveen","Product manager");
+        mapexample.set("Bhuvika","studying");
+       // console.log(mapexample)
+  //console.log(mapexample.keys())
+        //console.log(mapexample.values())
+        // console.log(mapexample.has("Bhuvika"))
+        //console.log(mapexample.get("poornima"));
+
+        // for(let [k,v] of mapexample){
+        //     console.log(k +" : " + v)
+        // }
+       mapexample.forEach( (v,k) => {
+        console.log(k +" : "+v)
+
+       }) 
+
+       
+    </script>
+</body>
+</html>

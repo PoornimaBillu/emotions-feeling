@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const mobileLis = [
+            {name:"POCO",price:20000,type:"electronic" },
+            {name:"Lenovo",price:10000,type:"electronic1" },
+            {name:"Apple",price:42000,type:"electronic2" },
+            {name:"RealMe",price:10000,type:"electronic3" },
+            {name:"Redmi",price:12000,type:"electronic4" },
+            {name:"Nokia",price:19000,type:"electronic5" },
+            {name:"Sony",price:21000,type:"electronic6" }
+        
+        ]
+        console.log(mobileLis)
+        let newPrices = mobileLis.map(item => {
+            return {name:item.name+1 ,price:item.price*3}
+        })
+        console.log(newPrices)
+    </script>
+</body>
+</html>

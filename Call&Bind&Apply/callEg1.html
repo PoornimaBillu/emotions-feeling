@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function initCall(){
+            console.log("function bind Called");
+        }
+
+        let person = {
+            fname:"poornima",
+            lname:"billu",
+            age:24,
+            city:"hyderabad",
+            render:function(){
+                this.initCall();
+            }
+        }
+let result= initCall.bind(person);
+result();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         const groceryLis = [
+            {name:"apple",price:100,type:"fruits" },
+            {name:"mangoes",price:200,type:"fruits" },
+            {name:"curry",price:200,type:"food" },
+            {name:"banana",price:80,type:"fruits" },
+            {name:"Curd",price:120,type:"diary" },
+            {name:"Onions",price:190,type:"veggies" },
+            {name:"Milk",price:210,type:"diary" }
+        
+        ]
+        console.log(groceryLis)
+        let someResults = groceryLis.some(item => {
+            return item.price > 10;
+        })
+
+        console.log(someResults)
+    </script>
+</body>
+</html>
